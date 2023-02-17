@@ -7,21 +7,17 @@ const localeObject = {
   monthsShort: 'Led_Úno_Bře_Dub_Kvě_Čer_Čvc_Srp_Zář_Říj_Lis_Pro'.split('_'),
   weekStart: 0,
   formats: {
-  LT: 'HH:mm',
-  LTS: 'HH:mm:ss',
-  L: 'DD/MM/YYYY',
-  LL: 'D. MMMM YYYY',
-  LLL: 'D. MMMM YYYY HH:mm',
-  LLLL: 'dddd D. MMMM YYYY HH:mm',
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD/MM/YYYY',
+    LL: 'D. MMMM YYYY',
+    LLL: 'D. MMMM YYYY HH:mm',
+    LLLL: 'dddd D. MMMM YYYY HH:mm',
   },
-  ordinal: (n) => {
-  const s = ['.', '.', '.', '.'];
-  const v = n % 100;
-  return [${n}${(s[(v - 20) % 10] || s[v] || s[0])}];
-  },
+  ordinal: n => `${n}.`,
   buttonValidate: 'Ok',
   buttonCancel: 'Zrušit',
   rangeHeaderText: 'Od %d Do %d',
-  };
+};
 
 export default localeObject;
