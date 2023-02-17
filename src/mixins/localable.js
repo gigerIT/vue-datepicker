@@ -20,7 +20,7 @@ export default Vue.extend({
         getDefaultLang() {
             return (
                 (this.$vuedatepicker && this.$vuedatepicker.lang) ||
-                'de'
+                'en'
             ).substr(0, 2);
         },
         isValidLocale(lang = {}) {
